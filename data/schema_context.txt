@@ -1,0 +1,27 @@
+DATABASE SCHEMA
+========================================
+
+Table: customers  (10,000 rows)
+------------------------------
+  rownumber                 BIGINT              
+  customerid                BIGINT              
+  surname                   TEXT                
+  creditscore               BIGINT              
+  geography                 TEXT                
+  gender                    TEXT                
+  age                       BIGINT              
+  tenure                    BIGINT              
+  balance                   DOUBLE PRECISION    
+  numofproducts             BIGINT              
+  hascrcard                 BIGINT              
+  isactivemember            BIGINT              
+  estimatedsalary           DOUBLE PRECISION    
+  exited                    BIGINT              
+
+Table: plans  (4 rows)
+------------------------------
+  plan_id                   INTEGER              NOT NULL
+  plan_name                 VARCHAR(50)         
+  monthly_fee               NUMERIC(8, 2)       
+  data_limit_gb             INTEGER             
+  category                  VARCHAR(20)         
